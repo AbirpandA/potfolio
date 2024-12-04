@@ -106,7 +106,7 @@ header {
     height: 300px;
     border-radius: 50%;
     overflow: hidden;
-    border: 10px solid #007ced;
+    border: 10px solid #0c85f640;
     box-shadow: 0 0 30px rgba(0, 124, 237, 0.5);
 }
 
@@ -167,7 +167,7 @@ header {
 }
 
 .social a:hover {
-    color: #007ced;
+    color: #007aeddc;
 }
 
 
@@ -182,7 +182,7 @@ header {
     max-height: 500px;
     margin: 0 auto;
     border-radius: 50%;
-    border: 2px solid #007ced ;
+    border: 2px solid #2992f4cd ;
 }
 
 .center-node {
