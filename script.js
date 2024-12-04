@@ -1,43 +1,7 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Skill Bar Animation
-    const skillBars = document.querySelectorAll('.skill-bar');
-    
-    const observerOptions = {
-        threshold: 0.1
-    };
 
-    const skillObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const bar = entry.target;
-                const percentage = bar.getAttribute('data-percent');
-                const progress = bar.querySelector('.skill-progress');
-                progress.style.width = `${percentage}%`;
-            }
-        });
-    }, observerOptions);
-
-    skillBars.forEach(bar => {
-        bar.querySelector('.skill-progress').style.width = '0%';
-        skillObserver.observe(bar);
-    });
-
-    // Smooth Scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            
-            const targetSection = document.querySelector(this.getAttribute('href'));
-            targetSection.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        });
-    });
-
-    });
-    const titles = ["Aspiring Game Developer", "Literature Geek", "Editor","Web devloper"];
+const titles = ["Aspiring Game Developer", "Literature Geek", "Editor","Web devloper"];
 let index = 0;
+// const radius = skillTree.offsetWidth / 2;
 
 function changeTitle() {
     const titleElement = document.querySelector('.input');
