@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abir Panda - Winter is Coding</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="hero-header">
+        <div class="wrapper">
+            <nav>
+                <div class="logo">
+                    <div class="logo-text">Abir Panda</div>
+                </div>
+                
+                <div class="togglebtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <ul class="navlinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="container">
+        <div class="hero-pic">
+            <img src="picofme (3).png" alt="Abir Panda">
+        </div>
+        
+        <div class="hero-text">
+            <h5>Hi, I'm a <span class="input">Frontend Developer</span></h5>
+            <h1>Abir Panda</h1>
+            <p>Winter is Coming: Crafting digital realms with the precision of a Stark and the creativity of a Targaryen.</p>
+            
+            <div class="btn-group">
+                <a href="#" class="btn active">Download CV</a>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+            
+            <div class="social">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="wrapper">
+            <h2 class="section-title">My Coding Kingdoms</h2>
+            <div class="skill-tree">
+                <div class="center-node">Core Skills</div>
+                <div class="skill-node">JavaScript</div>
+                <div class="skill-node">React</div>
+                <div class="skill-node">Node.js</div>
+                <div class="skill-node">Python</div>
+                <div class="skill-node">CSS</div>
+                <div class="skill-node">HTML</div>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="wrapper">
+            <h2 class="section-title">My Digital Conquests</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-house="Stark">
+                    <h3>Winter Web App</h3>
+                    <p>A responsive web application built with React</p>
+                    <div class="project-links">
+                        <a href="#">Github</a>
+                        <a href="#">Live Demo</a>
+                    </div>
+                </div>
+                <div class="project-card" data-house="Targaryen">
+                    <h3>Dragon Dashboard</h3>
+                    <p>Data visualization dashboard using D3.js</p>
+                    <div class="project-links">
+                        <a href="#">Github</a>
+                        <a href="#">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="wrapper">
+            <h2 class="section-title">Send a Raven</h2>
+            <form id="contact-form" class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
