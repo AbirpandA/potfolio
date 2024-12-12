@@ -14,13 +14,23 @@
             <div class="logo">
                 <div class="logo-text">Abir Panda</div>
             </div>
-            
-            <ul class="navlinks">
+
+            <ul class="sidebar">
+                <li onclick="closesidebar()"><a href="#" class=""><svg xmlns="http://www.w3.org/2000/svg" height="130px" viewBox="0 -960 960 960" width="130px" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <li><a href="#home" class="underline-effect">Home</a></li>
                 <li><a href="#about" class="underline-effect">About</a></li>
                 <li><a href="#skills" class="underline-effect">Skills</a></li>
                 <li><a href="#projects" class="underline-effect">Projects</a></li>
                 <li><a href="#contact" class="underline-effect">Contact</a></li>
+            </ul>
+            
+            <ul class="navlinks">
+                <li><a href="#home" class="underline-effect  hideonmob">Home</a></li>
+                <li><a href="#about" class="underline-effect hideonmob">About</a></li>
+                <li><a href="#skills" class="underline-effect hideonmob">Skills</a></li>
+                <li><a href="#projects" class="underline-effect hideonmob">Projects</a></li>
+                <li><a href="#contact" class="underline-effect  hideonmob">Contact</a></li>
+                <li onclick="showsidebar()"><a href="#" class="hideonpc"><svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="40px" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </div>
     </nav>
@@ -129,20 +139,18 @@
                     <p>weather app that features a sleek UI/UX design. The background image changes dynamically based on the current weather conditions, providing users with an engaging and visually appealing experience while delivering accurate weather updates. It's a seamless blend of functionality and aesthetics </p>
                 </div>
             </div>
-            <div class="project autozoom  lastP " id="">
-                <a href="">
-                <div class="project-img">
-                        <img src="" alt="">
-                    </div>
-                </a>
-                <div class="project-info">
-                    <p> </p>
-                </div>
-            </div>
+            
         </div>
 
     </section>
+    
+      
+      
+
+   </main>
+   <footer>
     <section class="contact-section" id="contact">
+        <h1 class="h-contact">Contact me</h1>
         <div class="backgrond-contact autoshow">
             <div class="nameentry">
                 <input type="text" id="clientName" placeholder="Enter your name">
@@ -156,12 +164,7 @@
         </div>
 
     </section>
-      
-      
-
-   </main>
-   <footer>
-
    </footer>
+   <script src="js/script.js"></script>
 </body>
 </html>
