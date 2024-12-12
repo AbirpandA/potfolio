@@ -64,7 +64,7 @@ body::-webkit-scrollbar {
     text-decoration: none;
 
 }
-.hideonpc{
+.menu{
     display: none;
 }
 .underline-effect {
@@ -539,6 +539,9 @@ input::placeholder{
     /* Navigation */
     .hideonmob{
         display: none;
+    }
+    .menu{
+        display: block;
     }
     .logo{
         font-size: 1.5rem;
